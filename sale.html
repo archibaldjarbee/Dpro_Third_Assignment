@@ -58,10 +58,10 @@
     </section>
 
     <section class="section_inner">
-      <h2>ORDERING</h2>
-      <form class="order-form">
-        <div class="form-group">
-          <label for="product">Please select a product</label>
+      <h2>Order</h2>
+      <form>
+        <p>Please select a product</p>
+        <div>
           <select id="product" name="product" aria-label="Product selection" required>
             <option hidden value="0">Please select</option>
             <option value="500">Original Blend 200g 500 yen</option>
@@ -69,15 +69,12 @@
             <option value="700">Special Blend 200g 700 yen</option>
             <option value="1200">Special Blend 500g 1200 yen</option>
           </select>
-        </div>
-        <div class="form-group">
-          <label for="number">Please select quantity</label>
+          <p>Please select quantity</p>
           <input type="number" min="1" max="5" id="number" aria-label="Quantity selection" required>
         </div>
-        <div class="button-group">
-          <input type="button" class="btn btn-add" value="Add to Cart" onclick="add()"> 
-          <input type="button" class="btn btn-total" value="Total Amount" onclick="calc()">
-        </div>
+        <br>
+        <input type="button" class="btn" value="Add to Cart" onclick="add()"> 
+        <input type="button" class="btn" value="Total Amount" onclick="calc()">
       </form>
     </section>
     <script type="text/javascript" src="javascripts/sale.js"></script>
